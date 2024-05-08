@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css" />
+   <title>LOGIN</title>
+</head>
+<body id="top">
+<div style="background-image:url('Images\wallpaper.jpg');">
+
+      <div class="wrapper rowl">
+	    <nav class="wrapper">
+		  <div class="brand">
+		      <div class="firstname">๋࣭⭑ Nailun & Tara ✧₊˚⊹</div>
+		  </div>
+	  </div>
+</div>
+   <h1>Login to our website!</h1>
+   <input id="username" placeholder="Input username" type="text">
+   <input id="password" placeholder="Input password" type="password">
+   <button onclick="login() ">Login</button>
+   <p id="gagal"></p>
+</body>
+<script>
+   function login() {
+        var username = document.getElementById("username").value
+        var password = document.getElementById("password").value
+        if(username == "natadecoco", password == "02060103") {
+		window.location.href="home.html";
+		alert("Congratulations!");
+    }else{
+        var gagal = document.getElementById('gagal').innerHTML = 'Username/Password salah, silakan coba lagi'
+    }
+   }
+
+</script>
+</html>
